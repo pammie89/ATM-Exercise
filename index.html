@@ -1,0 +1,95 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ATM Machine</title>
+  <!-- Don't use this in production: -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- ----------------- Bootstrap header START ----------------- -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <style>
+    #Main {
+      background-image: url(atm2.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+     background-position: center;
+     height:100vh;
+     padding-top: 2%;
+     background-color: #222;
+
+    }
+    #root {
+      padding-top: 20%;
+      padding-left: 30%;
+      color: white;
+    
+    }
+    button {
+      background-color: #0c80f3;
+      border: 6px solid #0ff166;
+      border-radius: 10px;
+      width: 150px;
+    }
+    h2 {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .3em;   }
+
+    #mode-select {
+      width: 10%;
+      border-radius: 10px;
+    }
+    #number-input {
+      border-radius: 10px;
+    margin: 0 10px;
+    }
+
+    #submit-input {
+      border-radius: 10px;
+      background-color: red;
+      color: white;
+    }
+
+    h3 {
+      color: yellow;
+     
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin-left: 15px;
+      
+    }
+    @media screen and (max-width: 400px) {
+  #main {
+    background-image: url(atm2.png);
+   background-position: cover;
+      background-repeat: no-repeat;
+     background-position: center;
+
+    
+     background-color: #222;
+  }
+  
+  #root {
+      margin-top: 30%;
+      padding: 20%;
+      padding-left: 30%;
+      color: white;
+
+    
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div id="Main">
+  <div id="root"></div>
+  </div>
+  <!-- Load React. -->
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+  <!-- Load our React component. -->
+
+  <script src="atm.jsx" defer type="text/babel"></script>
+</body>
+
+</html>
